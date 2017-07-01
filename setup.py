@@ -6,8 +6,8 @@ setup(
   description = 'lib to assert perf test result to Inspector',
   author = 'Kevin Kahal',
   author_email = 'kahal.kevin@gmail.com',
-  url = 'https://github.com/peterldowns/mypackage', 
-  download_url = 'https://github.com/peterldowns/mypackage/archive/0.1.tar.gz',
+  url = 'https://github.com/kahalKevin/InspectorAgent', 
+  download_url = 'https://github.com/kahalKevin/InspectorAgent/archive/0.1.tar.gz',
   keywords = ['testing'], 
   classifiers = [],
 )
