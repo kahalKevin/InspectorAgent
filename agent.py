@@ -81,7 +81,7 @@ def getEnvFreeMemory(server, username, password):
     ssh = paramiko.SSHClient()
     ssh.load_system_host_keys()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-    ssh.connect(server, username=username, password=password)
+    ssh.connect(server, username=username, password=password, timeout=5)
     ssh_stdin, ssh_stdout, ssh_stderr = ssh.exec_command(cmd_to_execute)
     cmdOutput = ssh_stdout.readlines()[0].split(' ')
     ssh.close()
